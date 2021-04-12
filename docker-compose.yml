@@ -14,7 +14,7 @@ services:
   adminer:
     image: adminer
     environment:
-      ADMINER_DESIGN: galkaev
+      ADMINER_DESIGN: arc-material
     links:
       - db
     ports:
