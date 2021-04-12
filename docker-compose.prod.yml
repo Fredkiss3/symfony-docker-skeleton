@@ -8,7 +8,7 @@ services:
       - 127.0.0.1:8282:80
     volumes:
       - .:/var/www:delegated
-      - ./tools/docker/dev.conf:/etc/nginx/conf.d/default.conf
+      - ./dev.conf:/etc/nginx/conf.d/default.conf
     links:
       - php
   php:
