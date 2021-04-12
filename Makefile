@@ -16,7 +16,7 @@ help: ### Affiche cette aide
 
 
 deploy: ### Déploie une nouvelle version du site
-	ssh -p $(DEPLOY_PORT) $(server) 'cd $(dir) && git pull origin develop && make prod && make install && make prod'
+	ssh -p $(DEPLOY_PORT) $(server) 'cd $(dir) && git pull origin main && make prod && make install && make prod'
 
 admin: ### Génère le dashboard admin
 	$(sc) make:admin:dashboard
